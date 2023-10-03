@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Cats and Dogs classifier</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.11.0/dist/tf.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <header
+      class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      <div class="col-md-3 mb-2 mb-md-0">
+        <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+          <h3>Cats and Dogs classifier</h3>
+        </a>
+      </div>
+
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="https://github.com/majorpeter/cats-and-dogs-classifier" target="_blank" class="nav-link px-2">Source code</a></li>
+      </ul>
+    </header>
+
+    <p>Drag and drop images from the internet into the container below!</p>
+
+    <div class="card shadow-sm mb-5">
+      <div id="current-image-container">
+        <div id="loading-spinner" class="spinner-border text-dark" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <img id="current-image" crossorigin="anonymous"/>
+      </div>
+      <div class="card-body">
+        <p class="card-text" id="result">Loading...</p>
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="btn-group">
+            <button type="button" class="btn btn-sm btn-outline-secondary" id="view-btn">View</button>
+          </div>
+          <small id="probability">?</small>
+        </div>
+      </div>
+    </div>
+
+    Useful links (to drag images from):
+    <ul>
+      <li><a href="https://www.goodhousekeeping.com/life/pets/g4531/cutest-dog-breeds/" target="_blank">The 30 Cutest Dog Breeds You'll Wish You Could Cuddle All the Time</a></li>
+      <li><a href="https://rufusandcoco.com.au/blogs/blog/10-cat-breeds-purrfect-for-cold-weather" target="_blank">10 CAT BREEDS PURRFECT FOR COLD WEATHER</a></li>
+    </ul>
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <span class="mb-3 mb-md-0 text-body-secondary">© 2023 <a href="https://github.com/majorpeter/" target="_blank">majorpeter</a></span>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
